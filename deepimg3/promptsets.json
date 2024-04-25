@@ -1,0 +1,560 @@
+{
+    "architecture": [
+        {
+            "name": "Celestial Observatory",
+            "prompt": "A tower telescope with constellation engravings pointing to a starry sky."
+        },
+        {
+            "name": "Garden Bridge",
+            "prompt": "A stone bridge intertwined with flowering vines and trees, spanning a gentle river."
+        },
+        {
+            "name": "Solarium Library",
+            "prompt": "A vast library with glass domed ceilings showcasing the days sky."
+        },
+        {
+            "name": "Aqua Plaza",
+            "prompt": "A city square with fountains that create dancing water mirages of buildings."
+        },
+        {
+            "name": "Rooftop Oasis",
+            "prompt": "A skyscrapers top transformed into a lush garden with birds and a waterfall."
+        },
+        {
+            "name": "Floating Pavilion",
+            "prompt": "A serene pavilion on a calm lake, with lotus flowers and lanterns around."
+        },
+        {
+            "name": "Canyon Fortress",
+            "prompt": "A fortress carved into a canyons walls, with hanging gardens and arches."
+        },
+        {
+            "name": "Crystal Conservatory",
+            "prompt": "A greenhouse made entirely of colorful crystals, glowing gently in sunlight."
+        },
+        {
+            "name": "Lighthouse Library",
+            "prompt": "A coastal lighthouse with spiraling bookshelves guiding ships with knowledge."
+        },
+        {
+            "name": "Marble Mausoleum",
+            "prompt": "A pristine white marble tomb with intricate floral carvings, surrounded by roses."
+        },
+        {
+            "name": "Treehouse Village",
+            "prompt": "A village of wooden homes nestled in massive ancient trees, connected by rope bridges."
+        },
+        {
+            "name": "Desert Citadel",
+            "prompt": "A grand palace with golden domes, rising from desert sands, with an oasis at its heart."
+        }
+    ],
+    "portrait": [
+        {
+            "name": "Sculptor of Time",
+            "prompt": "A woman with tattoos resembling a starry night, hair flowing like a river, holding a galaxy-themed hourglass."
+        },
+        {
+            "name": "Guardians Mask",
+            "prompt": "A bronze mask adorned with gemstones and feather motifs."
+        },
+        {
+            "name": "Galactic Locket",
+            "prompt": "A silver locket that reveals a miniature swirling galaxy inside."
+        },
+        {
+            "name": "Harmonist",
+            "prompt": "A man in nature-themed attire, holding a glowing staff."
+        },
+        {
+            "name": "Mystics Instrument",
+            "prompt": "A wooden harp-violin hybrid with strings made of light."
+        },
+        {
+            "name": "Seafarers Compass",
+            "prompt": "An ornate compass with engravings of mythical sea creatures."
+        },
+        {
+            "name": "Sky Painter",
+            "prompt": "A young artist with cloud-shaped brushes painting a mini rain shower on canvas."
+        },
+        {
+            "name": "Temporal Tome",
+            "prompt": "A thick book with golden pages and shifting inscriptions."
+        },
+        {
+            "name": "Bottled Aurora",
+            "prompt": "A glass bottle containing a swirling colorful aurora."
+        },
+        {
+            "name": "Natures Maestro",
+            "prompt": "An elder in robes made of autumn leaves conducting a gust of wind."
+        },
+        {
+            "name": "Celestial Timepiece",
+            "prompt": "A pocket watch tracking planets and constellations."
+        },
+        {
+            "name": "Spectral Silhouette",
+            "prompt": "A figure transitioning between a tangible and a spectral form."
+        }
+    ],
+    "farout": [
+        {
+            "name": "Starry Ocean",
+            "prompt": "A vast midnight ocean shimmering under a sky filled with galaxies, where the boundary between water and sky is indistinguishable. Neon marine life dances below, mirroring the stars above."
+        },
+        {
+            "name": "Nature's Symphony",
+            "prompt": "A grand orchestra composed of trees as the musicians, flowers as the instruments, and animals as the audience. A gentle breeze conducts the melody."
+        },
+        {
+            "name": "Lost City of the Skies",
+            "prompt": "Floating islands in a clear blue sky, interconnected with hanging bridges, cascading waterfalls flowing from one to another, and majestic flying creatures soaring around."
+        },
+        {
+            "name": "Twilight Mirage",
+            "prompt": "A vast desert scene at sunset, where the sand dunes morph into silhouettes of ancient cities and mythical creatures, casting long shadows against a gradient of orange and purple."
+        },
+        {
+            "name": "Crystal Forest",
+            "prompt": "An enchanting forest where all the trees and foliage are made of glittering, translucent crystals, and bioluminescent creatures light up the scene, creating a mesmerizing interplay of colors and lights."
+        },
+        {
+            "name": "Steampunk Venice",
+            "prompt": "The canals of Venice replaced by tracks for steam-powered gondola trains, huge gears and clockwork mechanisms integrated into the historic architecture, and flying machines with ornate designs filling the sky."
+        },
+        {
+            "name": "Aquatic Utopia",
+            "prompt": "An underwater city illuminated by radiant corals, where merfolk go about their day in and around grand structures made from seashells and pearls, and schools of colorful fish create moving art."
+        },
+        {
+            "name": "Solar Flare Garden",
+            "prompt": "A serene garden on another planet where plants bloom in reaction to magnificent solar flares, painting the scene in ever-changing vibrant colors and patterns."
+        },
+        {
+            "name": "Library of Infinity",
+            "prompt": "A vast library with spiraling shelves that reach up into the cosmos, where celestial beings peruse the knowledge of the universe, and galaxies serve as reading lamps."
+        },
+        {
+            "name": "Mystic Carnival",
+            "prompt": "A whimsical carnival set on a cloud, with rides like a carousel of mythical creatures, tents revealing cosmic wonders, and performers displaying magic that merges reality with dreams."
+        },
+        {
+            "name": "Safari of Imagination",
+            "prompt": "A vast savannah where creatures from different mythologies and stories coexist—dragons fly alongside Pegasus, and griffins play with unicorns under a rainbow horizon."
+        },
+        {
+            "name": "Temporal Metropolis",
+            "prompt": "A city that showcases architectural marvels from different eras and cultures in a harmonious blend, from ancient pyramids and medieval castles to futuristic skyscrapers, all set against a backdrop of time vortexes."
+        },
+        {
+            "name": "Skyborne Ranges",
+            "prompt": "An ethereal mountain range floating above the clouds, with waterfalls cascading into the mist below and silver-winged birds soaring between peaks."
+        },
+        {
+            "name": "Sunken Metropolis",
+            "prompt": "A sprawling cityscape submerged in clear turquoise waters, where vibrant corals grow on skyscrapers and aquatic beings commute using bubble vehicles."
+        },
+        {
+            "name": "Archipelago of Wonders",
+            "prompt": "A series of floating islands, each with its own ecosystem - snowy peaks, dense jungles, cascading waterfalls, and radiant beaches, all interconnected by rainbow bridges."
+        },
+        {
+            "name": "Luminescent Abyss",
+            "prompt": "A cavern deep beneath the ocean, illuminated by glowing gemstones and phosphorescent algae, where merfolk gather in a grand amphitheater carved from pearl."
+        },
+        {
+            "name": "Aurora Legends",
+            "prompt": "A sky painted with a brilliant aurora, where the colorful lights form dancing silhouettes of ancient legends and modern tales, all reflected on a still, mirror-like ocean below."
+        },
+        {
+            "name": "Moonlit Terraces",
+            "prompt": "Lush terraced gardens spiraling upwards, filled with plants that glow under moonlight and water channels streaming from one level to another, creating shimmering cascades."
+        },
+        {
+            "name": "Abyssal Palace",
+            "prompt": "A labyrinthine palace made of sea glass and abalone, set on the ocean floor, with kelp forests serving as its gardens and bioluminescent creatures as its guards."
+        },
+        {
+            "name": "Moonlit Sanctuary",
+            "prompt": "A serene bay where the moon's reflection turns the water into liquid silver, and ancient, moss-covered statues of forgotten deities stand guard, half-submerged."
+        },
+        {
+            "name": "Galactic Oasis",
+            "prompt": "A secluded oasis in the midst of a cosmic desert, where comets serve as the palm trees, and celestial bodies reflect in a pond of liquid starlight."
+        },
+        {
+            "name": "Enchanted Monoliths",
+            "prompt": "Tall monoliths standing proud in a dense fog, each carved with glyphs and symbols that tell tales of old, as ghostly figures enact legendary stories around them."
+        },
+        {
+            "name": "Celestial Ballet",
+            "prompt": "A grand cosmic stage, where nebulae take the form of ballet dancers, spinning and leaping in harmony, creating a dance of colors, lights, and shadows."
+        },
+        {
+            "name": "Whimsical Waterways",
+            "prompt": "Intricate waterways on floating cloud terrains where gondolas made of petals and leaves sail gently, piloted by creatures of fairy tales."
+        },
+        {
+            "name": "Solar Sails Harbor",
+            "prompt": "A harbor in deep space, where ships with sails made of sun rays dock, transferring treasures of stardust, and being guided by constellations."
+        },
+        {
+            "name": "Chronicle Canyons",
+            "prompt": "Canyons that have walls engraved with the chronicles of time, narrating stories from the dawn of creation to the distant future, with each layer representing an epoch."
+        },
+        {
+            "name": "Pillars of Creation Redux",
+            "prompt": "A reimagined version of the iconic Pillars of Creation, where majestic pillars are intertwined with golden vines, and star-nurturing flowers bloom, guarded by ethereal phoenixes."
+        },
+        {
+            "name": "Gardens of Gravity",
+            "prompt": "A beautiful garden where plants and flowers grow in spirals, orbs, and other mesmerizing patterns, all influenced by pockets of micro-gravities, creating a multi-dimensional horticultural marvel."
+        },
+        {
+            "name": "Cosmic Cascade",
+            "prompt": "A grand waterfall flowing from a celestial body, cascading stardust and liquid light into a shimmering pool below, with galaxies as the backdrop."
+        },
+        {
+            "name": "Nebulous Nook",
+            "prompt": "A secluded nook within a nebula, where the gas and dust take the shape of cozy lounges, reading corners, and ambient lighting, creating a space of solitude and reflection."
+        },
+        {
+            "name": "Stellar Shores",
+            "prompt": "Golden beaches under a twilight sky, where the sand is made of minute meteor fragments, and the waves are gentle ripples of the Milky Way, creating a serene shorescape."
+        },
+        {
+            "name": "Dimensional Drift",
+            "prompt": "A vast expanse where various dimensions and realities intersect, creating a vibrant mosaic of landscapes, structures, creatures, and phenomena, blending seamlessly into one grand panorama."
+        }
+    ],
+    "photoportraits": [
+        {
+            "name": "Dream Weaver",
+            "prompt": "High-resolution photo of a man with silver locks, eyes reflecting nebulae, against a backdrop of a tapestry of dreams woven from moonlit threads."
+        },
+        {
+            "name": "Oceans Enchantress",
+            "prompt": "DSLR quality portrait of a woman adorned in seashell jewelry, her flowing hair filled with marine life, holding a coral trident."
+        },
+        {
+            "name": "Flame Whisperer",
+            "prompt": "Photorealistic image of a figure with ember-red eyes, skin etched with fiery runes, hair like dancing flames."
+        },
+        {
+            "name": "Knight of the Aurora",
+            "prompt": "Crisp photo of a knight in armor reflecting the northern lights, helmet crowned with a constellation crest."
+        },
+        {
+            "name": "Natures Songstress",
+            "prompt": "Detailed portrait of a maiden with a crown of fresh flowers, green ivy tattoos, surrounded by fluttering leaves and birds."
+        },
+        {
+            "name": "Eclipse Seer",
+            "prompt": "High-definition photo of an elder with a dark blindfold, face illuminated by moon phases, holding a sun orb staff."
+        },
+        {
+            "name": "Windborne Nomad",
+            "prompt": "Photo of a traveler in swirling desert scarves, face marked with wind symbols, against a stormy horizon."
+        },
+        {
+            "name": "Guardian of the Abyss",
+            "prompt": "Crisp image of a warrior with scales, glowing deep-sea tattoos, wielding a blade of deep-sea minerals."
+        },
+        {
+            "name": "Solar Seraph",
+            "prompt": "Photorealistic portrait of a radiant being, wings like sunrays, holding a blazing sunfire staff."
+        },
+        {
+            "name": "Mistress of the Monolith",
+            "prompt": "Detailed photo of a regal figure in stone-gray robes, necklace of runes, against a backdrop of an ancient stone monument."
+        },
+        {
+            "name": "Runecrafted Alchemist",
+            "prompt": "High-resolution image of an alchemist with gold liquid eyes, rune tattoos, pouring a potion that mirrors the night sky."
+        },
+        {
+            "name": "Tempests Embrace",
+            "prompt": "Crisp portrait of a person surrounded by whirlwinds, electric blue hair streaks, eyes capturing storm fury."
+        },
+        {
+            "name": "Sculptor of Time",
+            "prompt": "Photorealistic image of a woman with starry night tattoos, hair like flowing rivers, holding a galaxy-themed hourglass."
+        },
+        {
+            "name": "Harmonist",
+            "prompt": "High-definition portrait of a man in nature attire, holding a luminous staff against a serene backdrop."
+        },
+        {
+            "name": "Forests Sentinel",
+            "prompt": "High-resolution photo of a man with green eyes, bark-like skin, and hair made of intertwining vines against a dense forest backdrop."
+        },
+        {
+            "name": "Tidal Siren",
+            "prompt": "DSLR quality portrait of a woman with deep blue eyes, hair that flows like water, adorned with pearls, against a cascading ocean wave backdrop."
+        },
+        {
+            "name": "Desert Wanderer",
+            "prompt": "Photorealistic image of a nomad with sand-colored attire, eyes reflecting vast dunes, with a golden desert horizon behind."
+        },
+        {
+            "name": "Skys Vanguard",
+            "prompt": "Crisp photo of a figure with wings made of clouds, eyes capturing the expanse of the sky, set against a radiant sunrise."
+        },
+        {
+            "name": "Icebound Enigma",
+            "prompt": "Detailed portrait of an individual with frosty blue eyes, skin sparkling like snow, against a backdrop of shimmering glaciers."
+        },
+        {
+            "name": "Volcanic Forgemaster",
+            "prompt": "High-definition photo of a blacksmith with molten-gold eyes, skin speckled with ash, working amidst a fiery volcanic landscape."
+        },
+        {
+            "name": "Twilight Ballerina",
+            "prompt": "Photo of a dancer with lavender-tinted attire, eyes echoing the hues of twilight, pirouetting against a setting sun canvas."
+        },
+        {
+            "name": "Galactic Voyager",
+            "prompt": "Crisp image of an astronaut with a visor reflecting constellations, set against the vast void of space dotted with stars."
+        },
+        {
+            "name": "Meadows Muse",
+            "prompt": "Photorealistic portrait of a muse with flower-petal eyelashes, hair like cascading meadow grasses, against a backdrop of blooming wildflowers."
+        },
+        {
+            "name": "Thunders Emissary",
+            "prompt": "Detailed photo of a figure with eyes that flicker like lightning, clothed in storm-gray, set amidst dark storm clouds with bolts streaking the skies."
+        },
+        {
+            "name": "Sunrise Nomad",
+            "prompt": "High-resolution image of a traveler with robes that transition from deep night blue to dawn gold, eyes capturing the first light of day, against a backdrop of a mountainous horizon at dawn."
+        },
+        {
+            "name": "Frostbite Marauder",
+            "prompt": "Crisp portrait of a warrior in armor that gleams like ice, eyes resembling frozen lakes, set against a backdrop of a snowy tundra."
+        },
+        {
+            "name": "Orchards Duchess",
+            "prompt": "Photorealistic image of a regal woman adorned with jewelry made of ripe fruits, with an orchard in full harvest as her backdrop."
+        },
+        {
+            "name": "Caverns Whisper",
+            "prompt": "High-definition portrait of an individual with skin that mimics the textures of cave walls, eyes like gemstones, set against the intricate details of a crystal-laden cavern."
+        }
+    ],
+    "moreportraits": [
+        {
+            "name": "Dream Weaver",
+            "prompt": "A man with silver locks, eyes reflecting nebulae, weaving a tapestry of dreams from moonlit threads."
+        },
+        {
+            "name": "Oceans Enchantress",
+            "prompt": "A woman adorned in seashell jewelry, her flowing hair teeming with marine life, holding a trident made of coral."
+        },
+        {
+            "name": "Flame Whisperer",
+            "prompt": "A figure with ember-red eyes, skin etched with fiery runes, and hair resembling dancing flames."
+        },
+        {
+            "name": "Knight of the Aurora",
+            "prompt": "A knight in shimmering armor reflecting the northern lights, helmet crowned with a constellation crest."
+        },
+        {
+            "name": "Natures Songstress",
+            "prompt": "A maiden with a crown of blooming flowers, green ivy tattoos, and a voice visualized as fluttering leaves and birds."
+        },
+        {
+            "name": "Eclipse Seer",
+            "prompt": "An elder with a blindfold of pure darkness, face lit by phases of the moon, holding a staff topped with a sun orb."
+        },
+        {
+            "name": "Windborne Nomad",
+            "prompt": "A traveler wrapped in billowing desert scarves, face marked with symbols of the four winds, gazing with stormy eyes."
+        },
+        {
+            "name": "Guardian of the Abyss",
+            "prompt": "A warrior with scales, deep-sea luminescent tattoos, wielding a blade forged from deep-sea minerals."
+        },
+        {
+            "name": "Solar Seraph",
+            "prompt": "An ethereal being radiating golden light, wings resembling sunrays, holding a staff of pure sunfire."
+        },
+        {
+            "name": "Mistress of the Monolith",
+            "prompt": "A regal figure in stone-gray robes, necklace of ancient runes, standing before an age-old stone monument."
+        },
+        {
+            "name": "Runecrafted Alchemist",
+            "prompt": "An alchemist with eyes that shift like liquid gold, adorned with intricate rune tattoos, pouring a potion that resembles the night sky."
+        },
+        {
+            "name": "Tempests Embrace",
+            "prompt": "A person embraced by whirlwinds, with electric blue streaks in their hair, and eyes echoing the fury of a storm."
+        },
+        {
+            "name": "Sculptor of Time",
+            "prompt": "A woman with tattoos resembling a starry night, hair flowing like a river, holding a galaxy-themed hourglass."
+        },
+        {
+            "name": "Guardians Mask",
+            "prompt": "A bronze mask adorned with gemstones and feather motifs."
+        },
+        {
+            "name": "Galactic Locket",
+            "prompt": "A silver locket that reveals a miniature swirling galaxy inside."
+        },
+        {
+            "name": "Harmonist",
+            "prompt": "A man in nature-themed attire, holding a glowing staff."
+        }
+    ],
+    "deranged": [
+        {
+            "name": "Mouths of Memory",
+            "prompt": "An ancient library with books that have tiny mouths embedded in their spines."
+        },
+        {
+            "name": "Eyes of the Abyss",
+            "prompt": "A deep, bottomless pit in a desolate landscape, filled with countless eyes staring upwards."
+        },
+        {
+            "name": "Whispering Wallpaper",
+            "prompt": "Decrepit wallpaper in an abandoned mansion, its patterned design morphing into a sea of murmuring mouths."
+        },
+        {
+            "name": "Hallway of Gaze",
+            "prompt": "A long, dimly lit hallway where every door has an eye instead of a keyhole, each observing passersby."
+        },
+        {
+            "name": "Mirrors Appetite",
+            "prompt": "A grand mirror in a vintage frame, showing a reflection of a gaping, hungry mouth."
+        },
+        {
+            "name": "Window Watchers",
+            "prompt": "Old, dusty windows in an abandoned house, where the panes subtly reveal eyes observing the outside world."
+        },
+        {
+            "name": "Staircase of Sight",
+            "prompt": "A spiral staircase in an old tower, with each step containing an eye that blinks and looks around."
+        },
+        {
+            "name": "Canvas of Curiosity",
+            "prompt": "A blank art canvas, but as one looks closer, they notice eyes slowly opening and observing the room."
+        },
+        {
+            "name": "Eyes in the Fog",
+            "prompt": "A dense, chilling fog enveloping a town. Floating within are countless eyes, detached and wandering."
+        },
+        {
+            "name": "Pillar of Perception",
+            "prompt": "In the ruins of an old temple stands a single pillar, covered top to bottom in watching eyes."
+        },
+        {
+            "name": "Forests Stare",
+            "prompt": "Deep within a forest, the trees have eyes that follow travelers, casting eerie glows during the night."
+        },
+        {
+            "name": "Puddles Glimpse",
+            "prompt": "After a heavy rain, a child notices a puddle. Within the water, eyes look up, reflecting a world unknown."
+        },
+        {
+            "name": "Curtains Secrets",
+            "prompt": "An old theaters curtains that, when closed, reveal intricate patterns made up of subtle mouths, silently mouthing words."
+        },
+        {
+            "name": "Mausoleum Murmurs",
+            "prompt": "In a quiet graveyard, a mausoleum stands apart. Its entrance is adorned with stone mouths, seeming to whisper tales of the past."
+        }
+    ],
+    "naturelovers": [
+        {
+            "name": "Jungle Mystique",
+            "prompt": "A dense tropical jungle, sunlight filtering through thick canopies, with curious wildlife peeking from the undergrowth."
+        },
+        {
+            "name": "Enchanted Forest",
+            "prompt": "A magical forest bathed in twilight, with glowing fireflies and mystical creatures moving silently between ancient trees."
+        },
+        {
+            "name": "Majestic Castle",
+            "prompt": "A grand stone castle standing atop a hill, surrounded by a moat, with flags fluttering in the wind and a drawbridge leading to the entrance."
+        },
+        {
+            "name": "Cascade Dreams",
+            "prompt": "A serene waterfall cascading down mossy rocks into a clear lagoon, with a rainbow forming from its mist."
+        },
+        {
+            "name": "Nocturnal Beauty",
+            "prompt": "A tranquil night landscape, with a luminescent moon reflecting on a still lake and an owl silhouetted against the moon."
+        },
+        {
+            "name": "Galactic Night",
+            "prompt": "A breathtaking starry night with the Milky Way sprawling across the sky, and a shooting star creating a streak of light."
+        },
+        {
+            "name": "Natures Harmony",
+            "prompt": "A harmonious scene where a mountain, forest, and river meet, with wildlife drinking from the river and clouds casting shadows on the landscape."
+        }
+    ],
+    "animeinspired": [
+        {
+            "name": "Forgotten Samurai",
+            "prompt": "A lone samurai standing on an ancient bridge, with cherry blossoms falling around him, and a mysterious temple in the distance."
+        },
+        {
+            "name": "School of Magic",
+            "prompt": "Anime-style schoolkids discovering their magical abilities, set against a backdrop of a grand academy on floating islands."
+        },
+        {
+            "name": "Dragons Embrace",
+            "prompt": "A scene of a young anime warrior forming a bond with a majestic dragon, with both perched on a cliff overlooking the sea."
+        },
+        {
+            "name": "City of Neon Dreams",
+            "prompt": "A futuristic anime city illuminated by neon lights, with characters zooming around on hoverboards and digital billboards everywhere."
+        },
+        {
+            "name": "Starship Voyager",
+            "prompt": "Anime astronauts exploring a distant galaxy, with their sleek spaceship and alien planets in the backdrop."
+        },
+        {
+            "name": "Lost in Music",
+            "prompt": "An anime musician lost in the rhythm, with musical notes floating around, and a cityscape at twilight in the background."
+        },
+        {
+            "name": "Realm of Yokai",
+            "prompt": "A traditional Japanese village, with anime characters interacting with Yokai (supernatural spirits), creating a balance between the human and spirit worlds."
+        }
+    ],
+    "MATOinspired": [
+        {
+            "name": "MATOs Fantasy World",
+            "prompt": "A detailed MATO-styled illustration of a dreamlike world, where mythical creatures and humans coexist in harmony."
+        },
+        {
+            "name": "MATOs School Life",
+            "prompt": "A vibrant school scene with MATO-styled characters engaging in everyday activities, with a touch of magic and whimsy."
+        },
+        {
+            "name": "Enchanted Garden",
+            "prompt": "A beautiful garden filled with MATO-inspired magical creatures, plants that glow, and a serene pond reflecting the twilight sky."
+        },
+        {
+            "name": "MATOs Cityscape",
+            "prompt": "A bustling city brought to life in MATOs unique style, with hidden magical elements waiting to be discovered in alleyways and rooftops."
+        },
+        {
+            "name": "Starry Adventure",
+            "prompt": "MATO-styled characters on an intergalactic journey, interacting with cosmic entities and exploring unknown planets."
+        },
+        {
+            "name": "Mystical Forest",
+            "prompt": "A dense forest seen through MATOs eyes, with trees bearing magical fruits and mystical animals peeking through the foliage."
+        },
+        {
+            "name": "Oceans Melody",
+            "prompt": "An underwater scene showcasing MATOs take on the mystical world beneath, with mermaids, colorful coral, and ancient submerged ruins."
+        }
+    ]
+}
