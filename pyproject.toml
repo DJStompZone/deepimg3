@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "deepimg3"
-version = "1.3.8"
+version = "1.3.9"
 description = "Automated testing for the DeepAI text to image api"
 authors = ["DJ Magar <dj@deepai.org>"]
 license = "MIT"

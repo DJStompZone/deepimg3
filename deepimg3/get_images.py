@@ -16,7 +16,7 @@ import json
 import logging
 import os
 import time
-from typing import Union
+from typing import Tuple, Union
 
 import httpx
 from dotenv import load_dotenv
@@ -26,36 +26,34 @@ load_dotenv()
 
 RETRY_ATTEMPTS = 2
 APIKEY: str = os.environ.get("DEEPAIKEY", "No_API_KEY")
-url: str = os.environ.get("ENDPOINT", "https://api.deepai.org/api/text2img")
-model: str = os.environ.get("GENERATOR_MODEL", 'hd')
-debug = False
-error_count = (
+BASE_URL: str = os.environ.get("ENDPOINT", "https://api.deepai.org/api/text2img")
+MODEL: str = os.environ.get("GENERATOR_MODEL", 'hd')
+DEBUG_MODE = False
+ERROR_COUNT = (
     0
 )
 
 
-log_format = "%(asctime)s [%(levelname)s]: %(message)s"
-date_format = "%Y-%m-%d %H:%M:%S"
-logging_level = logging.INFO
+LOG_FORMAT = "%(asctime)s [%(levelname)s]: %(message)s"
+DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
+LOGGING_LEVEL = logging.INFO
 
-file_handler = logging.FileHandler("app.log", mode="a")
-file_handler.setLevel(logging_level)
-file_formatter = logging.Formatter(log_format, datefmt=date_format)
-file_handler.setFormatter(file_formatter)
+FILE_HANDLER = logging.FileHandler("app.log", mode="a")
+FILE_HANDLER.setLevel(LOGGING_LEVEL)
+FILE_FORMATTER = logging.Formatter(LOG_FORMAT, datefmt=DATE_FORMAT)
+FILE_HANDLER.setFormatter(FILE_FORMATTER)
 
-stream_handler = logging.StreamHandler()
-stream_handler.setLevel(logging_level)
-stream_formatter = logging.Formatter(log_format, datefmt=date_format)
-stream_handler.setFormatter(stream_formatter)
+STREAM_HANDLER = logging.StreamHandler()
+STREAM_HANDLER.setLevel(LOGGING_LEVEL)
+STREAM_FORMATTER = logging.Formatter(LOG_FORMAT, datefmt=DATE_FORMAT)
+STREAM_HANDLER.setFormatter(STREAM_FORMATTER)
 
-root_logger = logging.getLogger()
-root_logger.setLevel(logging_level)
-root_logger.addHandler(file_handler)
-root_logger.addHandler(stream_handler)
+ROOT_LOGGER = logging.getLogger()
+ROOT_LOGGER.setLevel(LOGGING_LEVEL)
+ROOT_LOGGER.addHandler(FILE_HANDLER)
+ROOT_LOGGER.addHandler(STREAM_HANDLER)
 
-good_resolutions = [
-
-
+GOOD_RESOLUTIONS: list[dict[str, Tuple[int, int]|float]] = [
     {"size": (1024, 1024), "aspect_ratio": 1.0},
     {"size": (1032, 1016), "aspect_ratio": 1.016},
     {"size": (1040, 1008), "aspect_ratio": 1.032},
@@ -67,7 +65,7 @@ good_resolutions = [
 ]
 
 
-def make_payload(input_prompt: Union[str, dict], version=0, square=False):
+def make_payload(input_prompt: Union[str, dict[str, str]], version: int=0, square: bool=False) -> dict[str, str]:
     """
     Constructs the payload to be sent to the DeepAI API.
 
@@ -79,18 +77,21 @@ def make_payload(input_prompt: Union[str, dict], version=0, square=False):
     Returns:
     - dict: Payload for the API request.
     """
+    __prompt: str = ""
     if type(input_prompt) is dict:
-        input_prompt = input_prompt["prompt"]
+        __prompt = input_prompt["prompt"]
+    if type(input_prompt) is str:
+        __prompt = input_prompt
     w = "1024" if square else str(1224 / (2 - version))
     l = "1024" if square else str(856 / (2 - version))
-    payload = {
-        "text": input_prompt,
+    payload: dict[str, str] = {
+        "text": __prompt,
         "grid_size": "1",
         "width": "1224" if version == 0 else "612",
         "height": "856" if version == 0 else "428",
     }
     if version == 0:
-        payload["image_generator_version"] = model
+        payload["image_generator_version"] = MODEL
     return payload
 
 
@@ -115,7 +116,7 @@ async def generate_image(
     Returns:
     - None
     """
-    global error_count
+    global ERROR_COUNT
     if semaphore is None:
         return
     async with semaphore:
@@ -128,7 +129,7 @@ async def generate_image(
         payload = make_payload(prompt_data["prompt"], version=version)
         headers = {"api-key": APIKEY}
 
-        if debug:
+        if DEBUG_MODE:
             logging.info(
                 f"Prompt: {prompt_data}, payload: {payload}, version: {version}, outpath: {outpath}, headers: {headers}".replace(
                     ",", "\n"
@@ -136,7 +137,7 @@ async def generate_image(
             )
             input("paused")
 
-        _url = url if version == 0 else "https://api.deepai.org/api/text2img"
+        _url = BASE_URL if version == 0 else "https://api.deepai.org/api/text2img"
 
         attempt = 0
         while attempt < RETRY_ATTEMPTS:
@@ -148,7 +149,7 @@ async def generate_image(
                 f"Attempt {attempt + 1}/{RETRY_ATTEMPTS} failed for prompt '{prompt_data['name']}': {response.text}"
             )
             attempt += 1
-            error_count += 1
+            ERROR_COUNT += 1
             if attempt < RETRY_ATTEMPTS:
                 await asyncio.sleep(5)
         else:
@@ -167,7 +168,7 @@ async def generate_image(
                 f"Attempt {attempt + 1}/{RETRY_ATTEMPTS} failed to fetch output image for prompt '{prompt_data['name']}': {image_response.text}"
             )
             attempt += 1
-            error_count += 1
+            ERROR_COUNT += 1
             if attempt < RETRY_ATTEMPTS:
                 await asyncio.sleep(5)
         else:
@@ -321,22 +322,30 @@ async def generate_both(data, itrs=2, setname=None, semaphore=None, pbar=None):
 
 
 def main():
-    root_logger.removeHandler(stream_handler)
+    ROOT_LOGGER.removeHandler(STREAM_HANDLER)
     parser = argparse.ArgumentParser(
         description="Generate images based on command line arguments."
     )
-    parser.add_argument("--num", type=int, default=2, help="Number of iterations.")
+    parser.add_argument("-n", "--num", type=int, default=2, help="Number of images to generate for each prompt/quality")
     parser.add_argument(
+        "-p",
         "--prompts",
         type=str,
-        default="promptsets.json",
-        help="File path to the promptsets file. (JSON)",
+        default="promptsets.example.json",
+        help="File path to the promptsets file. (JSON, List[Dict[str, str]])",
     )
     parser.add_argument(
+        "-q",
         "--quality",
         choices=["both", "hd", "sd"],
         default="hd",
         help="Quality of the image to generate.",
+    )
+    parser.add_argument(
+        "-c",
+        "--concurrency",
+        default=4,
+        help="Number of concurrent image generation tasks to run. Default: 4",
     )
 
     args = parser.parse_args()
@@ -352,44 +361,44 @@ def main():
         Returns:
         - None
         """
-        semaphore = asyncio.Semaphore(4)
+        semaphore = asyncio.Semaphore(args.concurrency)
         with open(args.prompts) as f:
-            data = json.load(f)
+            _prompt_data = json.load(f)
 
-        total_tasks = sum(len(prompts) for prompts in data.values()) * args.num
-        with tqdm(total=total_tasks, desc="Generating Images", leave=True) as pbar:
-            for pset in data.keys():
+        total_tasks = sum(len(prompts) for prompts in _prompt_data.values()) * args.num
+        with tqdm(total=total_tasks, desc="Generating Images", leave=True) as _progress_bar:
+            for _prompt_set in _prompt_data.keys():
                 if args.quality == "both":
                     logging.info(
-                        "Running both HD and SD prompts (concurrency: 4): %s", pset
+                        f"Running both HD and SD prompts (concurrency: {args.concurrency}): {_prompt_set}"
                     )
                     await generate_both(
-                        data.get(pset),
+                        _prompt_data.get(_prompt_set),
                         itrs=args.num,
-                        setname=pset,
+                        setname=_prompt_set,
                         semaphore=semaphore,
-                        pbar=pbar,
+                        pbar=_progress_bar,
                     )
                 elif args.quality == "hd":
-                    logging.info("Running only HD prompts (concurrency: 4): %s", pset)
+                    logging.info(f"Running only HD prompts (concurrency: {args.concurrency}): {_prompt_set}")
                     await async_do_HD(
-                        data.get(pset),
+                        _prompt_data.get(_prompt_set),
                         itrs=args.num,
-                        setname=pset,
+                        setname=_prompt_set,
                         semaphore=semaphore,
-                        pbar=pbar,
+                        pbar=_progress_bar,
                     )
                 elif args.quality == "sd":
-                    logging.info("Running only SD prompts (concurrency: 4): %s", pset)
+                    logging.info(f"Running only HD prompts (concurrency: {args.concurrency}): {_prompt_set}")
                     await async_do_SD(
-                        data.get(pset),
+                        _prompt_data.get(_prompt_set),
                         itrs=args.num,
-                        setname=pset,
+                        setname=_prompt_set,
                         semaphore=semaphore,
-                        pbar=pbar,
+                        pbar=_progress_bar,
                     )
 
-        logging.info(f"Finished processing. Total errors encountered: {error_count}")
+        logging.info(f"Finished processing. Total errors encountered: {ERROR_COUNT}")
 
     asyncio.run(_main(args))
 

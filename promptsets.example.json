@@ -1,5 +1,5 @@
 {
-    "architecture": [
+    "example_architecture": [
         {
             "name": "Celestial Observatory",
             "prompt": "A tower telescope with constellation engravings pointing to a starry sky."
@@ -13,7 +13,7 @@
             "prompt": "A vast library with glass domed ceilings showcasing the days sky."
         }
     ],
-    "farout": [
+    "example_farout": [
         {
             "name": "Starry Ocean",
             "prompt": "A vast midnight ocean shimmering under a sky filled with galaxies, where the boundary between water and sky is indistinguishable. Neon marine life dances below, mirroring the stars above."
