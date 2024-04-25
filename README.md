@@ -10,7 +10,7 @@
 
 ## Installation
 
-Download the latest `.whl` file from the project repository and install it using pip:
+Install the latest release using pip:
 
 ```bash
 pip install deepimg3
