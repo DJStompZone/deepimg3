@@ -22,4 +22,4 @@ dist/
 *.png
 *.jpg
 
-promptsets.json
+**/promptsets.json
